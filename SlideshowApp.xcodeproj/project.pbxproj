@@ -12,6 +12,10 @@
 		EA19FCEA201C85C2000CBF3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA19FCE8201C85C2000CBF3E /* Main.storyboard */; };
 		EA19FCEC201C85C2000CBF3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA19FCEB201C85C2000CBF3E /* Assets.xcassets */; };
 		EA19FCEF201C85C2000CBF3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA19FCED201C85C2000CBF3E /* LaunchScreen.storyboard */; };
+		EA19FCF7201C864A000CBF3E /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA19FCF6201C864A000CBF3E /* ImageViewController.swift */; };
+		EA19FCF9201C8843000CBF3E /* smallDog1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA19FCF8201C8843000CBF3E /* smallDog1.jpg */; };
+		EA19FCFB201C8862000CBF3E /* smallDog2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA19FCFA201C8862000CBF3E /* smallDog2.jpg */; };
+		EA19FCFD201C886E000CBF3E /* smallDog3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA19FCFC201C886D000CBF3E /* smallDog3.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		EA19FCEB201C85C2000CBF3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA19FCEE201C85C2000CBF3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA19FCF0201C85C2000CBF3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA19FCF6201C864A000CBF3E /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		EA19FCF8201C8843000CBF3E /* smallDog1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smallDog1.jpg; sourceTree = "<group>"; };
+		EA19FCFA201C8862000CBF3E /* smallDog2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smallDog2.jpg; sourceTree = "<group>"; };
+		EA19FCFC201C886D000CBF3E /* smallDog3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smallDog3.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,9 @@
 			children = (
 				EA19FCE3201C85C1000CBF3E /* SlideshowApp */,
 				EA19FCE2201C85C1000CBF3E /* Products */,
+				EA19FCF8201C8843000CBF3E /* smallDog1.jpg */,
+				EA19FCFA201C8862000CBF3E /* smallDog2.jpg */,
+				EA19FCFC201C886D000CBF3E /* smallDog3.jpg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +71,7 @@
 				EA19FCEB201C85C2000CBF3E /* Assets.xcassets */,
 				EA19FCED201C85C2000CBF3E /* LaunchScreen.storyboard */,
 				EA19FCF0201C85C2000CBF3E /* Info.plist */,
+				EA19FCF6201C864A000CBF3E /* ImageViewController.swift */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -123,7 +135,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA19FCFD201C886E000CBF3E /* smallDog3.jpg in Resources */,
+				EA19FCF9201C8843000CBF3E /* smallDog1.jpg in Resources */,
 				EA19FCEF201C85C2000CBF3E /* LaunchScreen.storyboard in Resources */,
+				EA19FCFB201C8862000CBF3E /* smallDog2.jpg in Resources */,
 				EA19FCEC201C85C2000CBF3E /* Assets.xcassets in Resources */,
 				EA19FCEA201C85C2000CBF3E /* Main.storyboard in Resources */,
 			);
@@ -137,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA19FCE7201C85C2000CBF3E /* ViewController.swift in Sources */,
+				EA19FCF7201C864A000CBF3E /* ImageViewController.swift in Sources */,
 				EA19FCE5201C85C2000CBF3E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
