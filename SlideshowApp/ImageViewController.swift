@@ -10,10 +10,17 @@ import UIKit
 
 class ImageViewController: UIViewController {
 
+    
+    @IBOutlet weak var bigImage: UIImageView!
+
+    var selectedImage = #imageLiteral(resourceName: "smallDog1.jpg")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        bigImage.image = selectedImage
     }
 
     override func didReceiveMemoryWarning() {

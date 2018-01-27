@@ -67,6 +67,17 @@ class ViewController: UIViewController {
         }
         
     }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // segueから遷移先のImageViewControllerを取得する
+        let imageViewController:ImageViewController = segue.destination as! ImageViewController
+                imageViewController.selectedImage = image.image!
+        
+    }
     
+    
+    
+    @IBAction func unwind(_ segue: UIStoryboardSegue) {
+    }
     
 }
