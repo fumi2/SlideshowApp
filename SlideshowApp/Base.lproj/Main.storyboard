@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,18 +16,18 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMH-sv-3fq">
-                                <rect key="frame" x="243" y="233" width="31" height="30"/>
+                                <rect key="frame" x="270.5" y="233" width="31" height="30"/>
                                 <state key="normal" title="進む"/>
                                 <connections>
                                     <action selector="forwardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DjF-0O-eyF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49V-xL-Cf2">
-                                <rect key="frame" x="127" y="233" width="66" height="30"/>
+                                <rect key="frame" x="154.5" y="233" width="66" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="66" id="QWe-ji-Bue"/>
                                     <constraint firstAttribute="height" constant="30" id="SK5-XQ-qlZ"/>
@@ -38,14 +38,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAE-Rx-9jS">
-                                <rect key="frame" x="46" y="233" width="31" height="30"/>
+                                <rect key="frame" x="73.5" y="233" width="31" height="30"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <action selector="returnButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0p9-eS-DdH"/>
                                 </connections>
                             </button>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="imS-Z9-9If">
-                                <rect key="frame" x="72.5" y="94" width="175" height="90"/>
+                                <rect key="frame" x="100" y="94" width="175" height="90"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="175" id="Qdq-wd-scw"/>
@@ -92,18 +92,18 @@
             <objects>
                 <viewController id="Nd1-Fa-0Mn" customClass="ImageViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qQ2-jm-HiS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyz-u9-tzW">
-                                <rect key="frame" x="145" y="247" width="31" height="30.5"/>
+                                <rect key="frame" x="172.5" y="248.5" width="31" height="128"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <segue destination="syK-BT-UfT" kind="unwind" unwindAction="unwind:" id="Txb-0A-DTF"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jSq-mN-8OV">
-                                <rect key="frame" x="38" y="60" width="244" height="165"/>
+                                <rect key="frame" x="64.5" y="60" width="246" height="166.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jSq-mN-8OV" secondAttribute="height" multiplier="300:203" id="B7M-LB-yFk"/>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="246" id="hGc-aF-55G"/>
@@ -116,7 +116,7 @@
                             <constraint firstItem="jWk-eA-b5s" firstAttribute="trailing" secondItem="jSq-mN-8OV" secondAttribute="trailing" priority="750" constant="38" id="Mzp-HK-0Bt"/>
                             <constraint firstItem="dyz-u9-tzW" firstAttribute="centerX" secondItem="qQ2-jm-HiS" secondAttribute="centerX" id="U6d-e7-yhH"/>
                             <constraint firstItem="dyz-u9-tzW" firstAttribute="centerX" secondItem="qQ2-jm-HiS" secondAttribute="centerX" id="cYE-RN-s76"/>
-                            <constraint firstItem="jSq-mN-8OV" firstAttribute="top" relation="lessThanOrEqual" secondItem="jWk-eA-b5s" secondAttribute="top" constant="40" id="gZQ-A3-XVJ"/>
+                            <constraint firstItem="jSq-mN-8OV" firstAttribute="top" secondItem="jWk-eA-b5s" secondAttribute="top" constant="40" id="gZQ-A3-XVJ"/>
                             <constraint firstItem="jSq-mN-8OV" firstAttribute="centerX" secondItem="qQ2-jm-HiS" secondAttribute="centerX" id="jqZ-QG-BbP"/>
                             <constraint firstItem="dyz-u9-tzW" firstAttribute="centerX" secondItem="jSq-mN-8OV" secondAttribute="centerX" id="uxt-IW-cnv"/>
                             <constraint firstItem="jWk-eA-b5s" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="dyz-u9-tzW" secondAttribute="bottom" constant="290.5" id="vSR-YA-faM"/>
