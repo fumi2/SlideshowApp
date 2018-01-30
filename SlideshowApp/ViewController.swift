@@ -10,46 +10,38 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    // 各画像を定義
-    var image1 = #imageLiteral(resourceName: "smallDog1.jpg")
-    var image2 = #imageLiteral(resourceName: "smallDog2.jpg")
-    var image3 = #imageLiteral(resourceName: "smallDog3.jpg")
+    //画像名の配列
+    var images = ["smallDog1.jpg", "smallDog2.jpg", "smallDog3.jpg"]
+    
+    //現在表示している画像の配列番号（初期値として0をセット）
+    var currentImageNo = 0
     
     // timerを定義
     var timer: Timer!
     
     // 画像を次に進める
     func forwardImage() {
-        //1枚目の時
-        if image.image == image1 {
-            image.image = image2
+        
+        if currentImageNo == 2 {
+            currentImageNo = 0
         }
-            //2枚目の時
-        else if image.image == image2 {
-            image.image = image3
+        else {
+            currentImageNo += 1
         }
-            
-            //3枚目の時
-        else if image.image == image3 {
-            image.image = image1
-        }
+        image.image = UIImage(named: images[currentImageNo])
     }
     
     // 画像を前に戻す
     func backwardImage() {
-        //1枚目の時
-        if image.image == image1 {
-            image.image = image3
+ 
+        if currentImageNo == 0 {
+            currentImageNo = 2
         }
-            //2枚目の時
-        else if image.image == image2 {
-            image.image = image1
+        else {
+            currentImageNo -= 1
         }
-            
-            //3枚目の時
-        else if image.image == image3 {
-            image.image = image2
-        }
+        image.image = UIImage(named: images[currentImageNo])
+        
     }
     
     
@@ -66,7 +58,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         // 最初の画像をセット
-        image.image = image1
+        image.image = UIImage(named: images[currentImageNo])
         
         // 再生ボタンをセット
         startOrStop.setTitle("再生", for: .normal)
