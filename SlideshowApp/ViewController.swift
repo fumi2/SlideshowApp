@@ -71,6 +71,7 @@ class ViewController: UIViewController {
         // 再生ボタンをセット
         startOrStop.setTitle("再生", for: .normal)
         
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -78,18 +79,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
     // 進むボタンの動作
     @IBAction func forwardButton(_ sender: Any) {
-        if startOrStop.currentTitle == "再生" {
         forwardImage()
-        }
     }
 
     // 戻るボタンの動作
     @IBAction func returnButton(_ sender: Any) {
-        if startOrStop.currentTitle == "再生" {
         backwardImage()
-        }
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -97,6 +95,21 @@ class ViewController: UIViewController {
         let imageViewController:ImageViewController = segue.destination as! ImageViewController
                 // 遷移先の画像に現在の画像を渡す
                 imageViewController.selectedImage = image.image!
+        
+        // タイマーを破棄して、nilにする
+        timer.invalidate()
+        timer = nil
+        
+        // ボタン表示を「再生」に変更
+        startOrStop.setTitle("再生", for: .normal)
+        
+        // 「進む」ボタンと「戻る」ボタンをタップ有効にする
+        forwardButton.isEnabled = true
+        backwardButton.isEnabled = true
+        
+        // 「進む」ボタンと「戻る」ボタンの色をデフォルトに戻す
+        forwardButton.setTitleColor(nil, for: .normal)
+        backwardButton.setTitleColor(nil, for: .normal)
         
     }
     
@@ -108,11 +121,15 @@ class ViewController: UIViewController {
     // 再生/停止ボタンを押した時の動作
     @IBAction func startAndStop(_ sender: Any) {
         // 再生ボタンを押した時の動作
-        if startOrStop.currentTitle == "再生" {
+        if timer == nil {
             // タイマーをセット
             timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
             // ボタン表示を「停止」に変更
             startOrStop.setTitle("停止", for: .normal)
+            
+            // 「進む」ボタンと「戻る」ボタンをタップ無効にする
+            forwardButton.isEnabled = false
+            backwardButton.isEnabled = false
             
             // 「進む」ボタンと「戻る」ボタンの色をグレーアウト
             forwardButton.setTitleColor(.gray, for: .normal)
@@ -120,12 +137,16 @@ class ViewController: UIViewController {
         }
         // 停止ボタンを押したときの動作
         else {
-            // タイマーを破棄
+            // タイマーを破棄して、nilにする
             timer.invalidate()
-            
+            timer = nil
             
             // ボタン表示を「再生」に変更
             startOrStop.setTitle("再生", for: .normal)
+            
+            // 「進む」ボタンと「戻る」ボタンをタップ有効にする
+            forwardButton.isEnabled = true
+            backwardButton.isEnabled = true
             
             // 「進む」ボタンと「戻る」ボタンの色をデフォルトに戻す
             forwardButton.setTitleColor(nil, for: .normal)
