@@ -97,8 +97,10 @@ class ViewController: UIViewController {
                 imageViewController.selectedImage = image.image!
         
         // タイマーを破棄して、nilにする
+        if timer != nil {
         timer.invalidate()
         timer = nil
+        }
         
         // ボタン表示を「再生」に変更
         startOrStop.setTitle("再生", for: .normal)
