@@ -13,9 +13,9 @@
 		EA19FCEC201C85C2000CBF3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA19FCEB201C85C2000CBF3E /* Assets.xcassets */; };
 		EA19FCEF201C85C2000CBF3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA19FCED201C85C2000CBF3E /* LaunchScreen.storyboard */; };
 		EA19FCF7201C864A000CBF3E /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA19FCF6201C864A000CBF3E /* ImageViewController.swift */; };
-		EA8C39F92020B1A500F24879 /* smallDog2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA8C39F62020B1A500F24879 /* smallDog2.jpg */; };
-		EA8C39FA2020B1A500F24879 /* smallDog1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA8C39F72020B1A500F24879 /* smallDog1.jpg */; };
-		EA8C39FB2020B1A500F24879 /* smallDog3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA8C39F82020B1A500F24879 /* smallDog3.jpg */; };
+		EACDC08B2021DF9F00FE781D /* smallDog2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EACDC0882021DF9F00FE781D /* smallDog2.jpg */; };
+		EACDC08C2021DF9F00FE781D /* smallDog1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EACDC0892021DF9F00FE781D /* smallDog1.jpg */; };
+		EACDC08D2021DF9F00FE781D /* smallDog3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EACDC08A2021DF9F00FE781D /* smallDog3.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +27,9 @@
 		EA19FCEE201C85C2000CBF3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA19FCF0201C85C2000CBF3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA19FCF6201C864A000CBF3E /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
-		EA8C39F62020B1A500F24879 /* smallDog2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = smallDog2.jpg; path = ../../../../Pictures/smallDog2.jpg; sourceTree = "<group>"; };
-		EA8C39F72020B1A500F24879 /* smallDog1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smallDog1.jpg; sourceTree = "<group>"; };
-		EA8C39F82020B1A500F24879 /* smallDog3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = smallDog3.jpg; path = ../../../../Pictures/smallDog3.jpg; sourceTree = "<group>"; };
+		EACDC0882021DF9F00FE781D /* smallDog2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = smallDog2.jpg; path = ../../../../Pictures/smallDog2.jpg; sourceTree = "<group>"; };
+		EACDC0892021DF9F00FE781D /* smallDog1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smallDog1.jpg; sourceTree = "<group>"; };
+		EACDC08A2021DF9F00FE781D /* smallDog3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = smallDog3.jpg; path = ../../../../Pictures/smallDog3.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +62,6 @@
 		EA19FCE3201C85C1000CBF3E /* SlideshowApp */ = {
 			isa = PBXGroup;
 			children = (
-				EA8C39F72020B1A500F24879 /* smallDog1.jpg */,
-				EA8C39F62020B1A500F24879 /* smallDog2.jpg */,
-				EA8C39F82020B1A500F24879 /* smallDog3.jpg */,
 				EA19FCE4201C85C2000CBF3E /* AppDelegate.swift */,
 				EA19FCE6201C85C2000CBF3E /* ViewController.swift */,
 				EA19FCE8201C85C2000CBF3E /* Main.storyboard */,
@@ -72,6 +69,9 @@
 				EA19FCED201C85C2000CBF3E /* LaunchScreen.storyboard */,
 				EA19FCF0201C85C2000CBF3E /* Info.plist */,
 				EA19FCF6201C864A000CBF3E /* ImageViewController.swift */,
+				EACDC0892021DF9F00FE781D /* smallDog1.jpg */,
+				EACDC0882021DF9F00FE781D /* smallDog2.jpg */,
+				EACDC08A2021DF9F00FE781D /* smallDog3.jpg */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -135,12 +135,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA8C39FB2020B1A500F24879 /* smallDog3.jpg in Resources */,
+				EACDC08D2021DF9F00FE781D /* smallDog3.jpg in Resources */,
 				EA19FCEF201C85C2000CBF3E /* LaunchScreen.storyboard in Resources */,
-				EA8C39F92020B1A500F24879 /* smallDog2.jpg in Resources */,
+				EACDC08B2021DF9F00FE781D /* smallDog2.jpg in Resources */,
 				EA19FCEC201C85C2000CBF3E /* Assets.xcassets in Resources */,
 				EA19FCEA201C85C2000CBF3E /* Main.storyboard in Resources */,
-				EA8C39FA2020B1A500F24879 /* smallDog1.jpg in Resources */,
+				EACDC08C2021DF9F00FE781D /* smallDog1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
