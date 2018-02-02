@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA12F37520247F1E00DBD863 /* smallDog1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA12F37420247F1E00DBD863 /* smallDog1.jpg */; };
+		EA12F37720247F3F00DBD863 /* smallDog2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA12F37620247F3F00DBD863 /* smallDog2.jpg */; };
+		EA12F37920247F5400DBD863 /* smallDog3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA12F37820247F5300DBD863 /* smallDog3.jpg */; };
 		EA19FCE5201C85C2000CBF3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA19FCE4201C85C2000CBF3E /* AppDelegate.swift */; };
 		EA19FCE7201C85C2000CBF3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA19FCE6201C85C2000CBF3E /* ViewController.swift */; };
 		EA19FCEA201C85C2000CBF3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA19FCE8201C85C2000CBF3E /* Main.storyboard */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA12F37420247F1E00DBD863 /* smallDog1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smallDog1.jpg; sourceTree = "<group>"; };
+		EA12F37620247F3F00DBD863 /* smallDog2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smallDog2.jpg; sourceTree = "<group>"; };
+		EA12F37820247F5300DBD863 /* smallDog3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smallDog3.jpg; sourceTree = "<group>"; };
 		EA19FCE1201C85C1000CBF3E /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA19FCE4201C85C2000CBF3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA19FCE6201C85C2000CBF3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +69,9 @@
 				EA19FCED201C85C2000CBF3E /* LaunchScreen.storyboard */,
 				EA19FCF0201C85C2000CBF3E /* Info.plist */,
 				EA19FCF6201C864A000CBF3E /* ImageViewController.swift */,
+				EA12F37420247F1E00DBD863 /* smallDog1.jpg */,
+				EA12F37620247F3F00DBD863 /* smallDog2.jpg */,
+				EA12F37820247F5300DBD863 /* smallDog3.jpg */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -126,7 +135,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA12F37920247F5400DBD863 /* smallDog3.jpg in Resources */,
+				EA12F37520247F1E00DBD863 /* smallDog1.jpg in Resources */,
 				EA19FCEF201C85C2000CBF3E /* LaunchScreen.storyboard in Resources */,
+				EA12F37720247F3F00DBD863 /* smallDog2.jpg in Resources */,
 				EA19FCEC201C85C2000CBF3E /* Assets.xcassets in Resources */,
 				EA19FCEA201C85C2000CBF3E /* Main.storyboard in Resources */,
 			);
